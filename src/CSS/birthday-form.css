@@ -1,0 +1,88 @@
+.birthday-form__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0 auto;
+  width: 60vw;
+  height: 300px;
+  align-items: center;
+}
+
+.birthday-form-input__container {
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: bold;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.birthday-form__year,
+.birthday-form__month {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 15rem;
+  height: 10rem;
+  border-radius: 10px;
+  border-top: rgb(116, 81, 56) solid 10px;
+  margin: 0 1rem 0 1rem;
+  box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.7);
+}
+
+.birthday-form__button {
+  display: block;
+  margin: 3rem auto 0 auto;
+  padding: 1.3rem 5rem;
+  border-style: none;
+  border-radius: 40px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s ease;
+  border: 4px solid rgb(116, 81, 56);
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 17px;
+  background-color: transparent;
+}
+
+.birthday-form__button:hover {
+  color: white;
+  background-color: rgb(116, 81, 56);
+}
+
+.birthday-form-title__container {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 4rem;
+  color: white;
+  padding: 2rem;
+  box-shadow: 0px 10px 20px 1px rgba(255, 255, 255, 1);
+}
+
+.birthday-form__title {
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.birthday-form__heading {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  text-shadow: 3px 6px 6px rgba(0, 0, 0, 0.7);
+}
+
+.birthday-form__label {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.birthday-form__input {
+  display: block;
+  margin: 1.5rem auto;
+  padding: 0.5rem 0 0.5rem 0.2rem;
+  font-size: 1.8rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: rgba(255, 255, 255, 0.525) solid 1px;
+  border-radius: 6px;
+  color: white;
+}

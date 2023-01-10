@@ -1,5 +1,6 @@
 import React from "react";
 import BirthdayForm from "./BirthdayForm";
+import "../CSS/app.css";
 import Results from "./Results";
 import { Routes, Route } from "react-router-dom";
 

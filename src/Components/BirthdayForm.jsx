@@ -51,15 +51,20 @@ export default function BirthdayForm() {
 
   return (
     <>
-      <div>
-        <h1>Top News Stories of Your Birth Year</h1>
+      <div className="birthday-form-title__container">
+        <h1 className="birthday-form__title">
+          Top News Stories of Your Birth Year
+        </h1>
       </div>
-      <div>
-        <h2>Enter Your Birth Month and Year</h2>
-        <div>
-          <div>
-            <label>Birth Year</label>
+      <div className="birthday-form__container">
+        <h2 className="birthday-form__heading">
+          Enter Your Birth Month and Year
+        </h2>
+        <div className="birthday-form-input__container">
+          <div className="birthday-form__year">
+            <label className="birthday-form__label">Birth Year</label>
             <input
+              className="birthday-form__input"
               ref={yearInputRef}
               type="number"
               min="1900"
@@ -67,13 +72,22 @@ export default function BirthdayForm() {
               defaultValue="1999"
             />
           </div>
-          <div>
-            <label>Birth Month</label>
-            <input ref={monthInputRef} type="number" min="1" max="12" />
+          <div className="birthday-form__month">
+            <label className="birthday-form__label">Birth Month</label>
+            <input
+              className="birthday-form__input"
+              ref={monthInputRef}
+              type="number"
+              min="1"
+              max="12"
+            />
           </div>
         </div>
       </div>
-      <button onClick={handleSearch}>Search</button>
+      <button onClick={handleSearch} className="birthday-form__button">
+        Search
+      </button>
+      <div className="results__container"></div>
     </>
   );
 }

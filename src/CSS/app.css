@@ -1,0 +1,17 @@
+@import-normalize;
+@import "birthday-form.css";
+
+*,
+*::before,
+*::after {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  background: url("../Photos/newspaper.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}

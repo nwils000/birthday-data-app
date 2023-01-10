@@ -8,7 +8,7 @@ export default function Results() {
   let results = location.state.results;
 
   return (
-    <div>
+    <div className="results__container">
       {results.slice(0, 5).map((result) => {
         return <Result key={uuidv4()} result={result} />;
       })}

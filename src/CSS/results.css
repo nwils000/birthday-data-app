@@ -1,0 +1,16 @@
+.results__items {
+  margin: 2rem;
+}
+
+.results__container {
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 0px 1600px rgba(0, 0, 0, 0.438);
+  width: 50vw;
+  margin: 9rem auto 1rem auto;
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border-top: rgb(116, 81, 56) solid 10px;
+  padding: 2rem;
+}

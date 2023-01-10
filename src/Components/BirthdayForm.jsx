@@ -87,7 +87,6 @@ export default function BirthdayForm() {
       <button onClick={handleSearch} className="birthday-form__button">
         Search
       </button>
-      <div className="results__container"></div>
     </>
   );
 }

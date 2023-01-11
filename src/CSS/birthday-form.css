@@ -1,3 +1,8 @@
+.birthday-form {
+  min-height: 100vh;
+  margin-bottom: -3.5rem;
+}
+
 .birthday-form__container {
   display: flex;
   flex-direction: column;
@@ -44,6 +49,7 @@
 .birthday-form__button:hover {
   color: white;
   background-color: #d8c9bb;
+  cursor: pointer;
 }
 
 .birthday-form-title__container {

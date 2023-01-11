@@ -51,7 +51,7 @@ export default function BirthdayForm() {
   }
 
   return (
-    <div className="footer__container">
+    <>
       <div className="birthday-form">
         <div className="birthday-form-title__container">
           <h1 className="birthday-form__title">
@@ -89,8 +89,9 @@ export default function BirthdayForm() {
         <button onClick={handleSearch} className="birthday-form__button">
           Search
         </button>
+        <div className="footer-push"></div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 }

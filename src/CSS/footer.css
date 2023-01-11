@@ -1,11 +1,5 @@
-.footer__container {
-  height: 100vh;
-}
-
 .footer {
-  position: absolute;
   width: 100vw;
-  bottom: 0;
   background-color: #3c2213b1;
   color: white;
   height: 3.5rem;
@@ -13,9 +7,18 @@
   text-align: center;
 }
 
+.footer,
+.footer-push {
+  height: 3.5rem;
+}
+
 .github__logo {
   height: 2rem;
   position: relative;
   bottom: -14%;
   left: 0.6%;
+}
+
+.github__logo:hover {
+  cursor: pointer;
 }

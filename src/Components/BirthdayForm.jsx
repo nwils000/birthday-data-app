@@ -50,6 +50,17 @@ export default function BirthdayForm() {
     setSearch(text);
   }
 
+  function enforceMinMax(el) {
+    if (el.value !== "") {
+      if (parseInt(el.value) < parseInt(el.min)) {
+        el.value = el.min;
+      }
+      if (parseInt(el.value) > parseInt(el.max)) {
+        el.value = el.max;
+      }
+    }
+  }
+
   return (
     <>
       <div className="birthday-form">
@@ -72,6 +83,7 @@ export default function BirthdayForm() {
                 min="1900"
                 max="2022"
                 defaultValue="1999"
+                onKeyUp={enforceMinMax}
               />
             </div>
             <div className="birthday-form__month">
@@ -82,6 +94,7 @@ export default function BirthdayForm() {
                 type="number"
                 min="1"
                 max="12"
+                onKeyUp={enforceMinMax}
               />
             </div>
           </div>

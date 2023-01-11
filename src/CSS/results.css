@@ -21,3 +21,25 @@
   height: 4rem;
   margin: 2rem 0 0 2rem;
 }
+
+@media screen and (max-width: 1000px) {
+  .results__container {
+    width: 80vw;
+    margin-top: 1rem;
+  }
+
+  .back-button {
+    margin: 1.5rem 0 0 1.5rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .results__items {
+    font-size: 1.2rem;
+  }
+
+  .results__container {
+    padding: 0.6rem;
+  }
+}

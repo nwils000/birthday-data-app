@@ -1,5 +1,7 @@
 .results__items {
   margin: 2rem;
+  list-style-type: upper-roman;
+  text-indent: 2;
 }
 
 .results__container {

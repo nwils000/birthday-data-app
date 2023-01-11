@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Result({ result }) {
-  return <div className="results__items">-{result.event}</div>;
+  return <li className="results__items">&nbsp;{result.event}</li>;
 }

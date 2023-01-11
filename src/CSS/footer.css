@@ -1,0 +1,21 @@
+.footer__container {
+  height: 100vh;
+}
+
+.footer {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  background-color: #3c2213a5;
+  color: white;
+  height: 3.5rem;
+  font-size: 1.3rem;
+  padding: 1rem 0 0 44vw;
+}
+
+.github__logo {
+  height: 2rem;
+  position: absolute;
+  bottom: 1.5%;
+  left: 53.6%;
+}

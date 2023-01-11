@@ -1,6 +1,7 @@
 @import-normalize;
 @import "birthday-form.css";
 @import "results.css";
+@import "footer";
 
 *,
 *::before,

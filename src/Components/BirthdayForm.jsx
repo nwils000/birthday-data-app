@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import { Navigate } from "react-router-dom";
 import { useIsMount } from "../Hooks/UseIsMount";
+import Footer from "./Footer";
 
 export default function BirthdayForm() {
   const [search, setSearch] = useState("");
@@ -50,43 +51,46 @@ export default function BirthdayForm() {
   }
 
   return (
-    <>
-      <div className="birthday-form-title__container">
-        <h1 className="birthday-form__title">
-          Top News Stories of Your Birth Year
-        </h1>
-      </div>
-      <div className="birthday-form__container">
-        <h2 className="birthday-form__heading">
-          Enter Your Birth Month and Year
-        </h2>
-        <div className="birthday-form-input__container">
-          <div className="birthday-form__year">
-            <label className="birthday-form__label">Birth Year</label>
-            <input
-              className="birthday-form__input"
-              ref={yearInputRef}
-              type="number"
-              min="1900"
-              max="2022"
-              defaultValue="1999"
-            />
-          </div>
-          <div className="birthday-form__month">
-            <label className="birthday-form__label">Birth Month</label>
-            <input
-              className="birthday-form__input"
-              ref={monthInputRef}
-              type="number"
-              min="1"
-              max="12"
-            />
+    <div className="footer__container">
+      <div className="birthday-form">
+        <div className="birthday-form-title__container">
+          <h1 className="birthday-form__title">
+            Top News Stories of Your Birth Year
+          </h1>
+        </div>
+        <div className="birthday-form__container">
+          <h2 className="birthday-form__heading">
+            Enter Your Birth Month and Year
+          </h2>
+          <div className="birthday-form-input__container">
+            <div className="birthday-form__year">
+              <label className="birthday-form__label">Birth Year</label>
+              <input
+                className="birthday-form__input"
+                ref={yearInputRef}
+                type="number"
+                min="1900"
+                max="2022"
+                defaultValue="1999"
+              />
+            </div>
+            <div className="birthday-form__month">
+              <label className="birthday-form__label">Birth Month</label>
+              <input
+                className="birthday-form__input"
+                ref={monthInputRef}
+                type="number"
+                min="1"
+                max="12"
+              />
+            </div>
           </div>
         </div>
+        <button onClick={handleSearch} className="birthday-form__button">
+          Search
+        </button>
       </div>
-      <button onClick={handleSearch} className="birthday-form__button">
-        Search
-      </button>
-    </>
+      <Footer />
+    </div>
   );
 }

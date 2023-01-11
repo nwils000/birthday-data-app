@@ -28,7 +28,7 @@ export default function BirthdayForm() {
           setToResults(true);
         });
     }
-  }, [search]);
+  }, [isMount, search]);
 
   if (toResults === true) {
     return <Navigate to="/results" state={{ results }} />;

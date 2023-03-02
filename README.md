@@ -1,6 +1,6 @@
 # Birthday Historical Data App
 
-This repository contains the source code for the Birthday Historical Data App, a web application that provides users with interesting historical events that happened on their birthday. The app uses the [History API](https://history.muffinlabs.com/) to retrieve historical data and display it to the user.
+This repository contains the source code for the Birthday Historical Data App, a web application that provides users with interesting historical events that happened on their birthday. The app uses the [History API](https://api-ninjas.com/api/historicalevents/) to retrieve historical data and display it to the user.
 
 ## Usage
 
